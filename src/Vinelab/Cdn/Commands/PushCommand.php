@@ -44,7 +44,17 @@ class PushCommand extends Command
 
         parent::__construct();
     }
-
+    
+    /**
+     * Execute the console command.
+     *
+     * @return mixed
+     */
+    public function handle()
+    {
+        $this->cdn->push();
+    }
+    
     /**
      * Execute the console command.
      *
